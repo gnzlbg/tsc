@@ -207,15 +207,16 @@ mod tests {
     #[test]
     fn start_stop() {
         let start = Start::now();
+        let _noop = test::black_box(0);
         let stop = Stop::now();
         let dur1 = stop - start;
 
         fn foo() -> i32 {
-            2_i32.pow(test::black_box(8))
+            test::black_box(test::black_box(2_i32).pow(test::black_box(29)))
         }
 
         let (dur2, r) = Duration::span(foo);
-        assert_eq!(r, 256);
+        assert_eq!(r, 536_870_912);
         assert!(dur2.cycles() >= dur1.cycles());
     }
 
@@ -226,7 +227,6 @@ mod tests {
             Duration::span_overhead().cycles()
         );
     }
-
 
     #[test]
     fn invariant_tsc() {
