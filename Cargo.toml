@@ -1,5 +1,5 @@
 [package]
-name = "tsc-time"
+name = "tsc-timer"
 version = "0.1.0"
 authors = ["gnzlbg <gonzalobg88@gmail.com>"]
 edition = "2018"
