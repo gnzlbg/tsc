@@ -30,7 +30,7 @@ dual licensed as above, without any additional terms or conditions.
 [travis]: https://travis-ci.org/gnzlbg/tsc
 [Travis-CI Status]: https://travis-ci.org/gnzlbg/tsc.svg?branch=master
 [appveyor]: https://ci.appveyor.com/project/gnzlbg/tsc
-[Appveyor Status]: 
+[Appveyor Status]: https://ci.appveyor.com/api/projects/status/d9gs34kvj6j3k96g?svg=true
 [Latest Version]: https://img.shields.io/crates/v/tsc.svg
 [crates.io]: https://crates.io/crates/tsc
 [docs]: https://docs.rs/tsc/badge.svg
