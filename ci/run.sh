@@ -7,8 +7,8 @@ set -ex
 # Tests are all super fast anyway, and they fault often enough on travis that
 # having only one thread increases debuggability to be worth it.
 export RUST_TEST_THREADS=1
-#export RUST_BACKTRACE=full
-#export RUST_TEST_NOCAPTURE=1
+export RUST_BACKTRACE=full
+export RUST_TEST_NOCAPTURE=1
 
 # The source directory is read-only. Need to copy internal crates to the target
 # directory for their Cargo.lock to be properly written.
