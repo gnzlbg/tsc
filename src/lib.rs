@@ -1,3 +1,5 @@
+//! Time-stamp counter (TSC) utilities
+
 #[cfg(test)]
 mod tests {
     #[test]

@@ -3,5 +3,9 @@ name = "tsc"
 version = "0.1.0"
 authors = ["gnzlbg <gonzalobg88@gmail.com>"]
 edition = "2018"
-
-[dependencies]
+description = "Time stamp counter utilities"
+homepage = "https://github.com/gnzlbg/tsc"
+repository = "https://github.com/gnzlbg/tsc"
+keywords = ["tsc", "time", "stamp", "counter", "measurement", "benchmarking" ]
+categories = ["hardware-support", "no-std", "date-and-time"]
+license = "MIT/Apache-2.0"

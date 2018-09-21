@@ -43,7 +43,7 @@ script: travis_wait 50 ci/run-docker.sh
 
 env:
   global:
-    secure: ""
+    secure: "e2721K2fwbWYY3XVaNnXTr5Y7FQAYRZIuP+YX5AHBLA6pbOjvVM2BPaWOC5OBN/Nlet5/VwSdh7DWrsAC3HTbJUzOXvMIWtwMPfD+Y3V5vv6oQaoghoo6bBpKFWPN/5lUaBzAZYKJnP0GGX7Ml4oqrwO6lLwnWM8EjZs5q9IyfAZQLiEZKJ1Xf7sCGd+tjYM8mWnK1ZY3n361OIfknZcQa1NWcwG1pIYYOJgJfECmcZrOqIzxzmzakKxtrkBPpV8dyXM1DoyTmcwIKGVI5CWSQalj/SZqbm7JLJ0f6ev5CLAs2wNOlp5CkGBaEqbVXy5o4hG5uMPhqUBeljw1R7Uk5t22UJwLC93isI2IuJo2DPNAoh3cXn8LvVdM1iNadwopfa/Ao7KQMqry13COnJkSAiHQKhLUJ1CSD/qMKN/enQ8jT1kVSs6eDRTfKByX12Eo7OpzaKBaLWQ0W4/YcOiwpEyzlvn1yEBTjLiCvjJdXLDzZMbcH3Qizxqnj7a+2xh5/0+GFP6WsTFTeJghwlUcLr5vNDQOW//4HUwdWRrfoJeRmaLhnXRjdFYTD6XLXdDAoajduzOK8AUwhKGgVQY0bdg+SCS8iSi0D0DGWADc5EpWVp2HCcwjAoTyDIETJc9o9mWkGCPq2m5myTGBfsVdHdHfzDXSHRsgGynmQU+QCg="
 notifications:
   email:
     on_success: never

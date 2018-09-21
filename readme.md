@@ -1,6 +1,8 @@
-# Time Stamp Counter
+# `x86`/`x86_64` Time-stamp counter (TSC) utilities
 
-Accurate timings on `x86`/`x86_64` within a single core using the time-stamp counter.
+[![Travis-CI Status]][travis] [![Appveyor Status]][appveyor] [![Latest Version]][crates.io] [![docs]][master_docs]
+
+* [API docs (`master` branch)][master_docs]
 
 ## License
 
