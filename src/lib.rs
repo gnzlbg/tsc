@@ -16,7 +16,7 @@
 //!     }
 //! }
 //!
-//! # #[cfg(not(target_os = "windows"))] {
+//! # if has_invariant_tsc() {
 //! // Non-invariant TSCs might produce unreliable results:
 //! assert!(has_invariant_tsc(), "The TSC is not invariant!");
 //! # }
