@@ -1,4 +1,4 @@
-# `x86`/`x86_64` Time-stamp-counter (TSC) timer
+# `x86`/`x86_64` time-stamp-counter (TSC) based timer
 
 [![Travis-CI Status]][travis] [![Appveyor Status]][appveyor] [![Latest Version]][crates.io] [![docs]][master_docs]
 
@@ -79,8 +79,8 @@ dual licensed as above, without any additional terms or conditions.
 [Appveyor Status]: https://ci.appveyor.com/api/projects/status/d9gs34kvj6j3k96g?svg=true
 [Latest Version]: https://img.shields.io/crates/v/tsc.svg
 [crates.io]: https://crates.io/crates/tsc
-[docs]: https://docs.rs/tsc/badge.svg
-[docs.rs]: https://docs.rs/tsc/
+[docs]: https://docs.rs/tsc-timer/badge.svg
+[docs.rs]: https://docs.rs/tsc-timer/
 [master_docs]: https://gnzlbg.github.io/tsc/tsc/
 [Code of Conduct]: https://www.rust-lang.org/en-US/conduct.html
 [intel_bench_paper]:
