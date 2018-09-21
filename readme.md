@@ -2,7 +2,11 @@
 
 [![Travis-CI Status]][travis] [![Appveyor Status]][appveyor] [![Latest Version]][crates.io] [![docs]][master_docs]
 
-[API docs of the `tsc` crate `master` branch][master_docs]
+---
+
+[API docs of the `tsc-timer` crate `master` branch][master_docs]
+
+---
 
 This library provides a time-stamp counter (TSC) based timer for micro
 benchmarking:
@@ -19,12 +23,15 @@ pub fn fibonacci(n: u64) -> u64 {
 // Non-invariant TSCs might produce unreliable results:
 assert!(has_invariant_tsc(), "The TSC is not invariant!");
 
-let (duration, result) = Duration::span(|| black_box(fibonacci(black_box(8))));
+let (duration, result) 
+    = Duration::span(|| black_box(fibonacci(black_box(8))));
 
 assert_eq!(result, 34);
 
-println!("Reference cycle count: {} cycles.", duration.cycles());
-//! // On my machine prints: "Reference cycle count: 951 cycles."
+println!("Reference cycle count: {} cycles.", 
+         duration.cycles());
+// On my machine prints: 
+// "Reference cycle count: 951 cycles."
 ```
 
 ## Notes

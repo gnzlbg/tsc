@@ -26,8 +26,10 @@
 //!
 //! assert_eq!(result, 34);
 //!
-//! println!("Reference cycle count: {} cycles.", duration.cycles());
-//! // On my machine prints: "Reference cycle count: 951 cycles."
+//! println!("Reference cycle count: {} cycles.",
+//!          duration.cycles());
+//! // On my machine prints:
+//! // "Reference cycle count: 951 cycles."
 //! ```
 //!
 //! # Notes
