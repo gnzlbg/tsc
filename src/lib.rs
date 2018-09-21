@@ -1,5 +1,3 @@
-//! Time-stamp counter (TSC) timer
-//!
 //! This library provides a time-stamp counter (TSC) based timer for micro
 //! benchmarking.
 //!
