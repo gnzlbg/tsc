@@ -217,7 +217,10 @@ mod tests {
 
         let (dur2, r) = Duration::span(foo);
         assert_eq!(r, 536_870_912);
-        assert!(dur2.cycles() >= dur1.cycles());
+
+        if has_invariant_tsc() {
+            assert!(dur2.cycles() >= dur1.cycles());
+        }
     }
 
     #[test]
