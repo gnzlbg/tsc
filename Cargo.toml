@@ -6,6 +6,6 @@ edition = "2018"
 description = "Time stamp counter utilities"
 homepage = "https://github.com/gnzlbg/tsc"
 repository = "https://github.com/gnzlbg/tsc"
-keywords = ["tsc", "time", "stamp", "counter", "measurement", "benchmarking" ]
+keywords = ["tsc", "time", "stamp", "counter", "measurement" ]
 categories = ["hardware-support", "no-std", "date-and-time"]
 license = "MIT/Apache-2.0"
