@@ -16,8 +16,10 @@
 //!     }
 //! }
 //!
+//! # #[cfg(not(target_os = "windows"))] {
 //! // Non-invariant TSCs might produce unreliable results:
 //! assert!(has_invariant_tsc(), "The TSC is not invariant!");
+//! # }
 //!
 //! let (duration, result) =
 //!     Duration::span(|| black_box(fibonacci(black_box(8))));
