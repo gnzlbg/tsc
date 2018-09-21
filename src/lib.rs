@@ -9,7 +9,7 @@
 //! # #![feature(test)]
 //! # extern crate test;
 //! # use self::test::black_box;
-//! # use tsc::*;
+//! # use tsc_timer::*;
 //! // The function we want to time:
 //! pub fn fibonacci(n: u64) -> u64 {
 //!     match n {
