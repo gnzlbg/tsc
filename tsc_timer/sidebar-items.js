@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["has_invariant_tsc","Returns true if the CPU has an invariant TSC."]],"struct":[["Duration","Duration between two time instants"],["Start","Start time instant"],["Stop","Stop time instant"]]});
