@@ -77,7 +77,7 @@ Contributions in any form (issues, pull requests, etc.) to this project
 must adhere to Rust's [Code of Conduct].
 
 Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in `tsc` by you, as defined in the Apache-2.0 license, shall be
+for inclusion in `tsc-timer` by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
 
 [travis]: https://travis-ci.org/gnzlbg/tsc

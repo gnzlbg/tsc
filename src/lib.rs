@@ -161,25 +161,12 @@ impl Duration {
 
     /// Returns a tuple of the execution duration of the function `f` and its
     /// result.
-    pub fn span<R, F: Fn() -> R>(f: F) -> (Self, R) {
+    pub fn span<R, F: FnOnce() -> R>(f: F) -> (Self, R) {
         let start = Start::now();
         let result = f();
         let stop = Stop::now();
-        let measurement_duration = stop - start;
-        let measurement_overhead = Self::span_overhead();
-        assert!(measurement_overhead <= measurement_duration);
-        let f_duration = measurement_duration - measurement_overhead;
-        (f_duration, result)
-    }
-
-    /// Returns the overhead that is intrinsic to [`span`].
-    ///
-    /// That is, how many cycles does it take to time a no-op.
-    fn span_overhead() -> Self {
-        let start = Start::now();
-        let _result = test::black_box(0);
-        let stop = Stop::now();
-        stop - start
+        let duration = stop - start;
+        (duration, result)
     }
 }
 
@@ -232,7 +219,7 @@ mod tests {
     fn print_span_overhead() {
         println!(
             "span overhead: {} cycles",
-            Duration::span_overhead().cycles()
+            Duration::span(|| test::black_box(0)).0.cycles()
         );
     }
 
