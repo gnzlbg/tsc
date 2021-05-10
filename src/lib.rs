@@ -189,6 +189,28 @@ impl ops::Sub<Duration> for Duration {
     }
 }
 
+/// Begins measuring time in new. Call `reset` to get the cycles since last
+/// reset.
+///
+/// Convenient when measuring several different intervals back-to-back.
+pub struct Stopwatch {
+    start: Start,
+}
+
+impl Stopwatch {
+    pub fn new() -> Stopwatch {
+        Stopwatch {
+            start: Start::now(),
+        }
+    }
+
+    pub fn reset(&mut self) -> Duration {
+        let duration = Stop::now() - Start(self.start.0);
+        self.start = Start::now();
+        duration
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
